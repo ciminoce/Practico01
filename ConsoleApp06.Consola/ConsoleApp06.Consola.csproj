@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ConsoleApp06.Entidades\ConsoleApp06.Entidades.csproj" />
+    <ProjectReference Include="..\Practico01.Shared\Practico01.Shared.csproj" />
   </ItemGroup>
 
 </Project>

@@ -47,17 +47,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp07.Entidades", "C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp01.Test", "ConsoleApp01.Test\ConsoleApp01.Test.csproj", "{B9AEDD22-103F-4448-B68D-9857983AFD6A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp02.Testing", "ConsoleApp02.Testing\ConsoleApp02.Testing.csproj", "{689940B1-5792-4934-927A-515B00F84AF7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp02.Testing", "ConsoleApp02.Testing\ConsoleApp02.Testing.csproj", "{689940B1-5792-4934-927A-515B00F84AF7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp03.Testing", "ConsoleApp03.Testing\ConsoleApp03.Testing.csproj", "{CB68C26A-8789-4101-BA7D-A09E4695C2C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp03.Testing", "ConsoleApp03.Testing\ConsoleApp03.Testing.csproj", "{CB68C26A-8789-4101-BA7D-A09E4695C2C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp04.Testing", "ConsoleApp04.Testing\ConsoleApp04.Testing.csproj", "{F535CDF3-AA31-45AE-AACF-F62E38995F55}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp04.Testing", "ConsoleApp04.Testing\ConsoleApp04.Testing.csproj", "{F535CDF3-AA31-45AE-AACF-F62E38995F55}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp05.Testing", "ConsoleApp05.Testing\ConsoleApp05.Testing.csproj", "{0DFF5902-A5C3-41F8-B1B2-B82FDD7D58C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp05.Testing", "ConsoleApp05.Testing\ConsoleApp05.Testing.csproj", "{0DFF5902-A5C3-41F8-B1B2-B82FDD7D58C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp06.Testing", "ConsoleApp06.Testing\ConsoleApp06.Testing.csproj", "{B79E8087-192F-478D-A30D-7DC45663DD75}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp06.Testing", "ConsoleApp06.Testing\ConsoleApp06.Testing.csproj", "{B79E8087-192F-478D-A30D-7DC45663DD75}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp07.Testing", "ConsoleApp07.Testing\ConsoleApp07.Testing.csproj", "{D6F28E00-D467-41C4-B417-5A43CF145D26}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp07.Testing", "ConsoleApp07.Testing\ConsoleApp07.Testing.csproj", "{D6F28E00-D467-41C4-B417-5A43CF145D26}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{C41D5D84-6808-4FA1-913E-571328C30C4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practico01.Shared", "Practico01.Shared\Practico01.Shared.csproj", "{45451067-FE22-425A-909E-973B2E64F87E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -149,6 +153,10 @@ Global
 		{D6F28E00-D467-41C4-B417-5A43CF145D26}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6F28E00-D467-41C4-B417-5A43CF145D26}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6F28E00-D467-41C4-B417-5A43CF145D26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45451067-FE22-425A-909E-973B2E64F87E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45451067-FE22-425A-909E-973B2E64F87E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45451067-FE22-425A-909E-973B2E64F87E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45451067-FE22-425A-909E-973B2E64F87E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -175,6 +183,7 @@ Global
 		{0DFF5902-A5C3-41F8-B1B2-B82FDD7D58C0} = {CB25C466-C8E0-4E19-8541-A0EC531F78E9}
 		{B79E8087-192F-478D-A30D-7DC45663DD75} = {E3C5E928-B46B-4446-9007-F803C7493694}
 		{D6F28E00-D467-41C4-B417-5A43CF145D26} = {D944EEBD-BD38-4254-A2ED-40C13713A5A8}
+		{45451067-FE22-425A-909E-973B2E64F87E} = {C41D5D84-6808-4FA1-913E-571328C30C4A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1BF21A99-3C38-4FC1-8AE6-CA2CEB3F8AE6}

@@ -1,6 +1,8 @@
 ﻿using ConsoleApp02.Entidades;
+using Practico01.Shared;
+var radio = ConsoleExtensions.ReadDouble("Ingrese el valor del radio:");
 
-Circunferencia circunferencia = new Circunferencia(5);
+Circunferencia circunferencia = new Circunferencia(radio);
 Console.WriteLine("Perímetro: " + circunferencia.CalcularPerimetro());
 Console.WriteLine("Área: " + circunferencia.CalcularArea());
 

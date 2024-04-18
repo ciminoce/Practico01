@@ -1,9 +1,10 @@
 ﻿// Ejemplo de uso
 using ConsoleApp01.Entidades;
+using Practico01.Shared;
 
 try
 {
-    double ladoCuadrado = 5.0;
+    double ladoCuadrado =ConsoleExtensions.ReadDouble("Ingrese el valor del lado cuadrado:");
     Cuadrado cuadrado = new Cuadrado(ladoCuadrado);
 
     // Utilizamos el método para imprimir la información del cuadrado
