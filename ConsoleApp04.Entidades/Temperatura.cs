@@ -1,4 +1,6 @@
-﻿namespace ConsoleApp04.Entidades
+﻿using System.Text.RegularExpressions;
+
+namespace ConsoleApp04.Entidades
 {
     public class Temperatura
     {
@@ -8,15 +10,19 @@
         // Constructor que recibe la temperatura en grados Celsius
         public Temperatura(double celsius)
         {
-            if (celsius < -80 || celsius > 80)
+            if (Regex.IsMatch(celsius.ToString(), "^\\d{2}[,.]?\\d?$"))
             {
-                throw new ArgumentOutOfRangeException("La temperatura en grados Celsius debe estar entre -80 y 80.");
+                if (celsius < -80 || celsius > 80)
+                {
+                    throw new ArgumentOutOfRangeException("La temperatura en grados Celsius debe estar entre -80 y 80.");
+                }
+
             }
-            if (Math.Abs(celsius * 10) - Math.Floor(celsius * 10) > 0.1)
+            else
             {
                 throw new ArgumentException("El valor debe tener únicamente un solo decimal");
-            }
 
+            }
             this.celsius = celsius;
         }
 
@@ -43,7 +49,7 @@
             return $"{celsius} °C";
         }
 
-        public (double, string) GetConversionEscala(char escala)
+        public Tuple<double, string> GetConversionEscala(char escala)
         {
             double temperaturaConvertida = 0;
             string escalaConvertida = string.Empty;
@@ -60,7 +66,7 @@
                 default:
                     throw new ArgumentException("Escala mal ingresada");
             }
-            return (temperaturaConvertida, escalaConvertida);
+            return new Tuple<double, string>(temperaturaConvertida, escalaConvertida);
         }
 
         public double DiferenciaConCeroAbsoluto()
